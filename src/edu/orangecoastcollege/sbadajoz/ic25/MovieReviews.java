@@ -31,8 +31,8 @@ public class MovieReviews {
 			for (Double double1 : list) {
 				System.out.println(double1);
 			}
-			System.out.println("Average rating: " + one.format(avg
-					/ list.size()));
+			System.out.println("Average rating: " + ((list.size() != 0)? one.format(avg
+					/ list.size()):"0.0"));		
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found");
 		}
